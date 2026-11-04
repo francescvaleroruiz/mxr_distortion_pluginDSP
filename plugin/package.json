@@ -1,0 +1,36 @@
+{
+	"name": "mxr_distortion",
+	"version": "1.0.0",
+	"description": "El MXR Distortion es un pedal de distorsión con controles de Output y Distortion, ofreciendo desde overdrive suave hasta saturación intensa, ideal para rock y blues.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Francesc Valero Ruiz",
+	"license": "ISC",
+	"repository": "https://github.com/francescvaleroruiz/mxr_distortion_pluginDSP",
+	"volumio_info": {
+		"prettyName": "MXR Distortion",
+		"icon": "fa-lightbulb-o",
+		"plugin_type": "music_service",
+		"architectures": [
+			"amd64",
+			"armhf",
+			"i386"
+		],
+		"os": [
+			"buster"
+		],
+		"details": "Digital emulation of the MXR Distortion pedal",
+		"changelog": "1.0.0 - initial version"
+	},
+	"engines": {
+		"node": ">=14.15.4 <15.0.0",
+		"volumio": ">=2.0.0 <4.0.0"
+	},
+	"dependencies": {
+		"fs-extra": "^0.28.0",
+		"kew": "^0.7.0",
+		"v-conf": "^1.4.3"
+	}
+}
